@@ -1,5 +1,7 @@
 package decorator;
 
+import java.util.ArrayList;
+
 public class BaconCheeseBurger implements FoodItem
 {
     private final CheeseBurger cheeseBurger;
@@ -20,5 +22,10 @@ public class BaconCheeseBurger implements FoodItem
     public void addTopping(String topping)
     {
         cheeseBurger.addTopping(topping);
+    }
+
+    public ArrayList<String> getToppings()
+    {
+        return cheeseBurger.getToppings();
     }
 }

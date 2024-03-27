@@ -6,7 +6,7 @@ class BurgerTest
 {
 
     @org.junit.jupiter.api.Test
-    void calculateCostNoToppings()
+    void calculateCost()
     {
         Burger burger = new Burger();
         assertEquals(1.00, burger.calculateCost());
