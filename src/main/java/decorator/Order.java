@@ -49,4 +49,9 @@ public class Order
     {
         return foodItems;
     }
+
+    public double getDiscount()
+    {
+        return discount;
+    }
 }
