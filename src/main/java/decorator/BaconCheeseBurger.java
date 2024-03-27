@@ -11,6 +11,11 @@ public class BaconCheeseBurger implements FoodItem
         basePrice = 1.00;
     }
 
+    public void addTopping(String topping)
+    {
+        cheeseBurger.addTopping(topping);
+    }
+
     @Override
     public double calculateCost()
     {

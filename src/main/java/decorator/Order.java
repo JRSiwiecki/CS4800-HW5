@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Order
 {
     private final ArrayList<FoodItem> foodItems;
-    private double discount = 0.0;
+    private double discount = 1.0;
 
     public Order()
     {
