@@ -1,7 +1,5 @@
 package decorator;
 
-import java.util.ArrayList;
-
 public class Burger implements FoodItem
 {
     private final double basePrice;
