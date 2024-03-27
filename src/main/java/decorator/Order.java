@@ -29,9 +29,9 @@ public class Order
         return totalCost * discount;
     }
 
-    public void applyDiscount(String customerStatus)
+    public void setDiscount(CustomerLoyaltyStatus customerLoyaltyStatus)
     {
-        switch (customerStatus)
+        switch (customerLoyaltyStatus.getStatus())
         {
             case "NORMAL":
                 discount = 1.0;
