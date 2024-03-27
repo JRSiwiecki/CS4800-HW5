@@ -17,18 +17,6 @@ public class Order
         foodItems.add(foodItem);
     }
 
-    public double calculateOrderCost()
-    {
-        double totalCost = 0.0;
-
-        for (FoodItem foodItem : foodItems)
-        {
-            totalCost += foodItem.calculateCost();
-        }
-
-        return totalCost * discount;
-    }
-
     public void setDiscount(CustomerLoyaltyStatus customerLoyaltyStatus)
     {
         switch (customerLoyaltyStatus.getStatus())
@@ -43,5 +31,17 @@ public class Order
                 discount = 0.5;
                 break;
         }
+    }
+
+    public double calculateOrderCost()
+    {
+        double totalCost = 0.0;
+
+        for (FoodItem foodItem : foodItems)
+        {
+            totalCost += foodItem.calculateCost();
+        }
+
+        return totalCost * discount;
     }
 }
