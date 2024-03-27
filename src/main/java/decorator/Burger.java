@@ -23,4 +23,9 @@ public class Burger implements FoodItem
     {
         toppings.add(topping);
     }
+
+    public ArrayList<String> getToppings()
+    {
+        return toppings;
+    }
 }
