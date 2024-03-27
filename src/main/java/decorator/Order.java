@@ -44,4 +44,9 @@ public class Order
 
         return totalCost * discount;
     }
+
+    public ArrayList<FoodItem> getFoodItems()
+    {
+        return foodItems;
+    }
 }
