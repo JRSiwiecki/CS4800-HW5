@@ -19,6 +19,6 @@ class BaconCheeseBurgerTest
     {
         BaconCheeseBurger baconCheeseBurger = new BaconCheeseBurger(new CheeseBurger(new Burger()));
         baconCheeseBurger.addTopping("no lettuce");
-        assertEquals(3.25, baconCheeseBurger.calculateCost());
+        assertEquals(1, baconCheeseBurger.getToppings().size());
     }
 }

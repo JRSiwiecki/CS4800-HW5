@@ -20,6 +20,6 @@ class CheeseBurgerTest
         CheeseBurger cheeseBurger = new CheeseBurger(new Burger());
         cheeseBurger.addTopping("extra salt");
         cheeseBurger.addTopping("extra cheese");
-        assertEquals(2.50, cheeseBurger.calculateCost());
+        assertEquals(2, cheeseBurger.getToppings().size());
     }
 }

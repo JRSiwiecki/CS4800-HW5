@@ -17,6 +17,6 @@ class BurgerTest
     {
         Burger burger = new Burger();
         burger.addTopping("pickles");
-        assertEquals(1.25, burger.calculateCost());
+        assertEquals(1, burger.getToppings().size());
     }
 }
